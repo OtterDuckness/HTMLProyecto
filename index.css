@@ -1,0 +1,198 @@
+
+
+body
+{
+    background-color: rgb(50, 62, 72);
+}
+
+/*aqui empieza header - la parte arriba*/
+.header
+{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height: 80px;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#proyecto
+{
+    margin-right: auto;
+    color: aliceblue;
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+
+.menu
+{
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    color: aliceblue;
+}
+
+.menu a 
+{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu > li 
+{
+    width: 120px;
+    text-align: center;
+    position: relative;
+}
+
+.menu li ul 
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.3s ease;
+}
+
+.menu li ul li 
+{
+    padding: 4px 0;
+}
+
+.menu li:hover ul 
+{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+ul 
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+#Shirley, #Mikhail
+{
+    display: flex;
+    color: aliceblue;
+    font-family:'Courier New', Courier, monospace;
+    justify-content: center;
+    font-size: x-large
+}
+
+/*aqui termina header - la parte arriba*/
+
+
+/*aqui empieza main con imagenes animadas - la parte central*/
+
+.main 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 200px;
+}
+
+
+#slider         /*es tuyo*/
+{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner1
+{
+    width: 2000px; 
+    animation-name: cars1;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.img 
+{
+    float: left;
+}
+
+
+@keyframes cars1
+{
+    from 
+    {
+        margin-left: 0px;
+    }
+    to 
+    {
+        margin-left: -1600px;
+    }
+}
+
+#slider2        /*es mio*/
+{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner2
+{
+    width: 2000px; 
+    animation-name: foto;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes foto
+{
+    from 
+    {
+        margin-left: 0px;
+    }
+    to 
+    {
+        margin-left: -1600px;
+    }
+}
+
+
+/*aqui termina main con imagenes animadas - la parte central*/
+
+
+/*la parte con media query*/
+@media screen and (max-width:600px)
+{
+    .menu 
+    {
+        flex-direction: row;
+        align-items: center;
+    }
+
+.menu li ul 
+    {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    #proyecto
+    {
+        visibility: hidden;;
+    }
+}
+

@@ -1,0 +1,19 @@
+.gris{
+    background-color:  rgb(176, 117, 6);
+}
+#cuadro1{
+    background-color: rgb(232, 220, 206);
+}
+#cuadro2{
+    background-color: rgb(232, 220, 206);
+}
+body{
+    background-color: rgb(231, 213, 170);
+    text-decoration: wavy;
+}
+#boton1{
+    background-color: rgb(176, 117, 6);
+}
+#boton2{
+    background-color: rgb(176, 117, 6);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mcontacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    
+    <div class="header"> <div id="proyecto">Proyecto Lenguaje de Marcas</div>
+        <ul class="menu">
+            <li class="boton"><a href="index.html">Principal</a></li>
+            <li class="boton">Shirley
+                 <ul>
+                 <li class="Elementos"><a href="spaisajes.html">Paisajes</a>
+                    <ul>
+                       <li><a href="sagua.html">Agua</a></li>
+                       <li><a href="stierra.html">Tierra</a></li>
+                       <li><a href="saire.html">Aire</a></li>
+                       <li><a href="sfuego.css">Fuego</a></li>
+                    </ul>
+                </li>
+               <li class="Contacto"><a href="scontacto.html">Contacto</a></li>
+            </ul>
+            </li>
+            <li class="boton">Mikhail
+                <ul>
+                    <li class="b1"><a href="mretratos.html" title="Galería de fotografía de retratos">Retratos</a></li>
+                    <li class="b1"><a href="meventos.html" title="Galería de fotografía de eventos">Eventos</a></li>
+                    <li class="b1"><a href="mstreet.html" title="Galería de fotografía de street">Street</a></li>
+                    <li class="b1"><a href="mcontacto.html">Contacto</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div id="foto"><img src="mfotos/mcontacto/bio.jpg" alt="" width="400"></div>
+        <div id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nam eum pariatur eaque commodi quasi optio voluptatibus, perspiciatis quam consequuntur eligendi, 
+            vitae corporis officia illum aliquam fuga omnis quaerat quis amet.</div>
+    </div>
+
+    <div class="formulario">
+    <form action="" method="post">
+
+        <fieldset>
+            <legend>Datos de contacto</legend>
+
+            Nombre:<br>
+            <input type="text" name="nombre" size="25"><br><br>
+
+            Email:<br>
+            <input type="text" name="email" size="25"><br><br>
+
+            Tipo de sesión:<br>
+            <input type="radio" name="tipo" value="retratos">Retratos<br>
+            <input type="radio" name="tipo" value="eventos">Eventos<br>
+            <input type="radio" name="tipo" value="street">Street<br><br>
+
+            Servicios adicionales:<br>
+            <input type="checkbox" name="servicio1" value="edicion">Edición profesional<br>
+            <input type="checkbox" name="servicio2" value="impresion">Impresión<br>
+            <input type="checkbox" name="servicio3" value="album">Álbum físico<br><br>
+
+            Ciudad:<br>
+            <select name="ciudad">
+                <option value="seleccione">Seleccione</option>
+                <option value="sevilla">Madrid</option>
+                <option value="sevilla">Sevilla</option>
+                <option value="cadiz">Cádiz</option>
+                <option value="cordoba">Córdoba</option>
+            </select><br><br>
+
+            Mensaje:<br>
+            <textarea name="mensaje" cols="30" rows="5"></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+
+        </fieldset>
+
+    </form>
+</div>
+    
+</body>
+</html>
