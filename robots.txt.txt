@@ -1,7 +1,5 @@
 User-agent: *
 Allow: /
-
-User-agent: *
-Disallow: https://otterduckness.github.io/HTMLProyecto/saire.html
+Disallow: /HTMLProyecto/saire.html
 
 Sitemap: https://otterduckness.github.io/HTMLProyecto/sitemap.xml
